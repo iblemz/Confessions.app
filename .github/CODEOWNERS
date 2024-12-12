@@ -1,0 +1,15 @@
+# These owners will be the default owners for everything in
+# the repo. Unless a later match takes precedence,
+# @iblemz will be requested for review when someone 
+# opens a pull request.
+*       @iblemz
+
+# App configuration files
+app.json        @iblemz
+package.json    @iblemz
+
+# Source code
+/src/           @iblemz
+
+# Firebase configuration
+/src/config/    @iblemz

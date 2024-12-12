@@ -1,0 +1,43 @@
+name: Confessions.app Development
+description: Track development progress of Confessions.app
+
+columns:
+  - name: To Do
+    description: Tasks that need to be worked on
+    initial: true
+
+  - name: In Progress
+    description: Tasks currently being worked on
+
+  - name: Review
+    description: Tasks that need review
+
+  - name: Done
+    description: Completed tasks
+
+labels:
+  - name: bug
+    color: '#d73a4a'
+    description: Something isn't working
+
+  - name: enhancement
+    color: '#a2eeef'
+    description: New feature or request
+
+  - name: documentation
+    color: '#0075ca'
+    description: Improvements or additions to documentation
+
+  - name: good first issue
+    color: '#7057ff'
+    description: Good for newcomers
+
+  - name: help wanted
+    color: '#008672'
+    description: Extra attention is needed
+
+automation:
+  - name: Auto-assign to project
+    events: [issues.opened, pull_request.opened]
+    action: add_to_project
+    column: To Do
